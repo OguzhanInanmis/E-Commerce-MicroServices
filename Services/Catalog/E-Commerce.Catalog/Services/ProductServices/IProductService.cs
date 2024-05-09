@@ -1,0 +1,13 @@
+﻿using E_Commerce.Catalog.Dtos.ProductDtos;
+
+namespace E_Commerce.Catalog.Services.ProductServices
+{
+    public interface IProductService
+    {
+        Task<List<ResultProductDto>> GetAllProductsAsync();
+        Task CreateProductAsync(CreateProductDto createProductDto);
+        Task UpdateProductAsync(UpdateProductDto updateProductDto);
+        Task DeleteProductAsync(string productId);
+        Task<ResultProductDto> GetByIdProductAsync(string productId);
+    }
+}
