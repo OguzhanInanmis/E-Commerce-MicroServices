@@ -1,6 +1,5 @@
 ﻿using E_Commerce.Discount.Dtos;
 using E_Commerce.Discount.Services;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace E_Commerce.Discount.Controllers
@@ -19,15 +18,15 @@ namespace E_Commerce.Discount.Controllers
         [HttpGet]
         public async Task<IActionResult> CouponList()
         {
-            var values = await discountService.GetAllCouponsAsync();
+            List<ResultCouponDto> values = await discountService.GetAllCouponsAsync();
             return Ok(values);
         }
         [HttpGet("id")]
         public async Task<IActionResult> GetCouponById(int id)
         {
-            var value = await discountService.GetByIdCouponAsync(id);
+            ResultCouponDto value = await discountService.GetByIdCouponAsync(id);
             return Ok(value);
-            
+
         }
         [HttpPost]
         public async Task<IActionResult> CreateCoupon(CreateCouponDto createCouponDto)
