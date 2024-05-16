@@ -2,10 +2,12 @@
 using E_Commerce.Order.Application.Features.CQRS.Handlers.AddressHandlers;
 using E_Commerce.Order.Application.Features.CQRS.Queries.AddressQueries;
 using E_Commerce.Order.Application.Features.CQRS.Results.AddressResults;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace E_Commerce.Order.API.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class AddressesController : ControllerBase
