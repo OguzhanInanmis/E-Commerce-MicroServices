@@ -7,11 +7,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{43
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{76212618-FFB1-4169-909A-5FE71F4FAE51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-Commerce.Catalog", "Services\Catalog\E-Commerce.Catalog\E-Commerce.Catalog.csproj", "{BAD357B2-BAC4-43EB-A0FD-47D850FBFBCF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-Commerce.Catalog", "Services\Catalog\E-Commerce.Catalog\E-Commerce.Catalog.csproj", "{BAD357B2-BAC4-43EB-A0FD-47D850FBFBCF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Discount", "Discount", "{98C4A12F-8194-4DC6-A04F-E56CB7AADBA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-Commerce.Discount", "Services\Discount\E-Commerce.Discount\E-Commerce.Discount.csproj", "{9550902C-78C4-47F0-93A0-7EC5A4CEAD6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-Commerce.Discount", "Services\Discount\E-Commerce.Discount\E-Commerce.Discount.csproj", "{9550902C-78C4-47F0-93A0-7EC5A4CEAD6B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Order", "Order", "{9A140E6F-B5AC-4ACA-B5F6-D5DAA071ED56}"
 EndProject
@@ -21,15 +21,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{535691B8-1E14-43BC-8059-AA77F797782E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-Commerce.Order.Domain", "Services\Order\Core\E-Commerce.Order.Domain\E-Commerce.Order.Domain.csproj", "{4C9345D8-7DAD-46A9-8765-2764F2F1BECA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-Commerce.Order.Domain", "Services\Order\Core\E-Commerce.Order.Domain\E-Commerce.Order.Domain.csproj", "{4C9345D8-7DAD-46A9-8765-2764F2F1BECA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-Commerce.Order.Application", "Services\Order\Core\E-Commerce.Order.Application\E-Commerce.Order.Application.csproj", "{9897738A-CC29-41E0-A571-3FF6FC74AB59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-Commerce.Order.Application", "Services\Order\Core\E-Commerce.Order.Application\E-Commerce.Order.Application.csproj", "{9897738A-CC29-41E0-A571-3FF6FC74AB59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-Commerce.Order.Infrastructure", "Services\Order\Infrastructure\E-Commerce.Infrastructure.Persistence\E-Commerce.Order.Infrastructure.csproj", "{BCC7DC62-BE7D-4334-838F-09456087AA42}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-Commerce.Order.Infrastructure", "Services\Order\Infrastructure\E-Commerce.Infrastructure.Persistence\E-Commerce.Order.Infrastructure.csproj", "{BCC7DC62-BE7D-4334-838F-09456087AA42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-Commerce.Order.Persistence", "Services\Order\Infrastructure\E-Commerce.Order.Persistence\E-Commerce.Order.Persistence.csproj", "{4C6CC226-AD1F-4EAB-9859-0C2C00983672}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-Commerce.Order.Persistence", "Services\Order\Infrastructure\E-Commerce.Order.Persistence\E-Commerce.Order.Persistence.csproj", "{4C6CC226-AD1F-4EAB-9859-0C2C00983672}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-Commerce.Order.API", "Services\Order\Presentation\E-Commerce.Order.API\E-Commerce.Order.API.csproj", "{AEF5675C-1E90-48AA-A3F7-66EDBC6EA1BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-Commerce.Order.API", "Services\Order\Presentation\E-Commerce.Order.API\E-Commerce.Order.API.csproj", "{AEF5675C-1E90-48AA-A3F7-66EDBC6EA1BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
