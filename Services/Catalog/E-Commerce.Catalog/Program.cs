@@ -3,11 +3,18 @@ using E_Commerce.Catalog.Services.ProductDetailServices;
 using E_Commerce.Catalog.Services.ProductImageServices;
 using E_Commerce.Catalog.Services.ProductServices;
 using E_Commerce.Catalog.Settings;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Options;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opt=>
+{
+    opt.Authority = builder.Configuration["IdentityServerUrl"];
+    opt.RequireHttpsMetadata = false;
+    opt.Audience = "ResourceCatalog";
+});
 // Add services to the container.
 builder.Services.AddScoped<ICategoryService , CategoryService>();
 builder.Services.AddScoped<IProductService , ProductService>();
@@ -39,6 +46,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
